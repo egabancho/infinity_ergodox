@@ -42,16 +42,16 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 const uint16_t fn_actions[] = {
   ACTION_LAYER_SET(0, ON_PRESS),
-  ACTION_LAYER_MOMENTARY(1), // layer 1 : fn                       FN1
-  ACTION_LAYER_MOMENTARY(2), // layer 2: keypad                    FN2
-  ACTION_MODS_TAP_KEY(MOD_LCTL, KC_ESC), // control / esc          FN3
-  ACTION_MODS_TAP_KEY(MOD_RCTL, KC_QUOT), // control / "           FN4
-  ACTION_MODS_TAP_TOGGLE(MOD_LSFT), // shift                       FN5
-  ACTION_MODS_TAP_TOGGLE(MOD_RSFT), // shift                       FN6
-  ACTION_MODS(MOD_LCTL | MOD_LALT | MOD_LSFT | MOD_LGUI), // hyper FN7
-  ACTION_MODS(MOD_LCTL | MOD_LALT | MOD_LSFT), // meh              FN8
-  ACTION_MODS_KEY(MOD_LCTL, KC_SPC), // tmux bind                  FN9
-  ACTION_MODS_KEY(MOD_LGUI, KC_SPC), // spotligh                   FN10
-  ACTION_MODS_KEY(MOD_LGUI, KC_C), // tmux bind                    FN11
-  ACTION_MODS_KEY(MOD_LGUI, KC_V), // tmux bind                    FN12
+  ACTION_LAYER_MOMENTARY(1), // layer 1 : fn                                  FN1
+  ACTION_LAYER_MOMENTARY(2), // layer 2: keypad                               FN2
+  ACTION_MODS_TAP_KEY(MOD_LCTL, KC_ESC), // control / esc                     FN3
+  ACTION_MODS_TAP_KEY(MOD_RCTL, KC_QUOT), // control / "                      FN4
+  ACTION_MODS_TAP_TOGGLE(MOD_LSFT), // shift                                  FN5
+  ACTION_MODS_TAP_TOGGLE(MOD_RSFT), // shift                                  FN6
+  ACTION_MODS_KEY(MOD_LCTL | MOD_LALT | MOD_LSFT | MOD_LGUI, KC_F3), // hyper FN7
+  ACTION_MODS_KEY(MOD_LCTL | MOD_LALT | MOD_LSFT, KC_F12), // meh             FN8
+  ACTION_MODS_KEY(MOD_LCTL, KC_SPC), // tmux bind                             FN9
+  ACTION_MODS_KEY(MOD_LGUI, KC_SPC), // spotligh                              FN10
+  ACTION_MODS_KEY(MOD_LGUI, KC_C), // tmux bind                               FN11
+  ACTION_MODS_KEY(MOD_LGUI, KC_V), // tmux bind                               FN12
 };
